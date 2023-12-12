@@ -105,7 +105,7 @@ function win(){
             }
         }
 
-    if (!gameMap.includes(0)){
+    if(!gameMap.includes(0)){
         restart()
     }
 

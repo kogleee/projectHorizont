@@ -56,7 +56,7 @@ nav{
     position:absolute;
     top:0;
     border: 300px solid transparent;
-    border: 150px solid transparent; border-left: 150px solid black; border-top: 150px solid black;
+    border: 135px solid transparent; border-left: 150px solid black; border-top: 135px solid black;
 
 }
 
@@ -97,7 +97,7 @@ nav{
 img{
     background-size:cover;
     background-repeat: no-repeat;
-    width:300px;
+    width:400px;
     height: 50%;
 }
 
