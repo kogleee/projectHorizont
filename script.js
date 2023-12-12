@@ -74,13 +74,14 @@ function win(){
     ("x" == gameMap[2] & "x" == gameMap[5] & "x" == gameMap[8])
     ){
         if (current == "x"){
-            
             user.textContent = `Игрок: ${++userCount}`
             restart()
+            return false
         }
         if (current == "o"){
             bot.textContent = `Бот: ${++botCount}`
             restart()
+            return false
         }
     }
 
@@ -97,17 +98,21 @@ function win(){
             if (current == "o"){
                 user.textContent = `Игрок: ${++userCount}`
                 restart()
+                return false
             }
             if (current == "x"){
                 bot.textContent = `Бот: ${++botCount}`
                 restart()
+                return false
 
             }
         }
 
     if(!gameMap.includes(0)){
         restart()
+        return false
     }
+    return true
 
 
 }
@@ -119,8 +124,7 @@ for (elem of game){
             if (gameMap[event.target.id-1] == 0){
                 gameMap[event.target.id - 1] = "x"
                 event.target.innerHTML = "<div class='crestikiUser'></div>"
-                win()
-                botHod()
+                if(win()) botHod()
             }
             
             
@@ -131,8 +135,7 @@ for (elem of game){
             if (gameMap[event.target.id-1] == 0){
                 gameMap[event.target.id - 1] = "o"
                 event.target.innerHTML = "<div class='nolikiUser'></div>"
-                win()
-                botHod()
+                if(win()) botHod()
             }
         
            
