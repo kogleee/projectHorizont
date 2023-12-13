@@ -105,7 +105,7 @@ img{
 }
 
 .settings{
-    width:10vw;
+    width:100%;
     display:flex;
     flex-direction: column;
     color:white;
@@ -118,13 +118,13 @@ img{
     height:33.3%;
     justify-content: center;
     align-items: center;
-    width:300px;
+    width:250px;
 }
 
 .settings-top p:first-child{
     z-index: 10;
     margin-top:200px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 .xo div{
     margin-top: 20px;
@@ -141,10 +141,10 @@ img{
     display:flex;
     height:67.7%;
     justify-content:center;
-    width:300px
+    width:250px;
 }
 .schet{
-    margin-top:350px;
+    margin-top:300px;
     display: flex;
     flex-direction: column;
 }
@@ -164,7 +164,7 @@ img{
 }
 
 .settings-down .vertical-setting{
-    margin-left:100px;
+    margin-left:50px;
     margin-top:50px;
     
 }
@@ -177,15 +177,14 @@ img{
     position:absolute;
     top:0;
     border: 300px solid transparent;
-    border: 150px solid transparent; border-left: 150px solid black; border-top: 150px solid black;
+    border: 125px solid transparent; border-left: 125px solid black; border-top: 125px solid black;
 }
 
 
 
 .game{
     margin:auto;
-    margin: auto 10vw;
-    
+    margin: auto 2vw;
     display:grid;
     grid-template-columns: calc(100% /3) calc(100% /3) calc(100% /3);
     height: 95vh;
@@ -194,22 +193,22 @@ img{
 
 .cell{
     border: solid black 8px;
-    width:300px;
+    width:20vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .crestikiBot{
-    height:80%;
-    width:82%;
+    height:100%;
+    width:70%;
     background:url(img/krestikiBot.png);
     background-size: contain;
     background-repeat:no-repeat;
 }
 .crestikiUser{
     height:80%;
-    width:82%;
+    width:70%;
     background:url(img/krestikiUser.png);
     background-size: contain;
     background-repeat:no-repeat;
@@ -218,16 +217,21 @@ img{
 
 .nolikiBot{
     background: url(img/nolikiBot.png);
-    width:78%;
+    width:70%;
     height:80%;
     background-size:contain;
     background-repeat:no-repeat
 }
 .nolikiUser{
     background: url(img/nolikiUser.png);
-    width:78%;
+    width:70%;
     height:80%;
     background-size:contain;
     background-repeat:no-repeat
+}
+
+.gameContainer{
+    width: 100vw;
+    display:flex;
 }
 
