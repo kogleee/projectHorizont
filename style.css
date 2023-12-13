@@ -189,7 +189,7 @@ img{
     display:grid;
     grid-template-columns: calc(100% /3) calc(100% /3) calc(100% /3);
     height: 95vh;
-    width: 70vw;
+    width: 60vw;
 }
 
 .cell{
